@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Icon from "./Icon";
+import logo from "../../LOGO.png";
 import WhatsAppMark from "./WhatsAppMark";
 import { getWhatsAppUrl } from "../config/siteConfig";
 import { whatsappTopics } from "../data/siteData";
@@ -48,7 +49,9 @@ function WhatsAppWidget() {
           <div className="wa-chat-body">
             <div className="wa-timestamp">MULAI KONSULTASI</div>
             <div className="wa-message-row">
-              <div className="wa-mini-avatar">B</div>
+              <div className="wa-mini-avatar">
+                <img src={logo} alt="Logo BIMATA" />
+              </div>
               <div className="wa-message-bubble">
                 <span className="wa-greeting">Halo! 👋</span>
                 <p>Selamat datang di BIMATA. Apakah Anda membutuhkan konektivitas untuk kantor, cabang, atau proyek?</p>
