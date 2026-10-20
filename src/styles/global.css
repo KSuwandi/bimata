@@ -659,7 +659,7 @@ button {
 
 .coverage-card {
   left: 3%;
-  bottom: 7%;
+  bottom: 2%;
   animation: float 6s ease-in-out infinite reverse;
 }
 
@@ -1249,19 +1249,26 @@ button {
   border-radius: 50%;
 }
 
+
 .indonesia-map {
   position: absolute;
+  z-index: 1;
   left: 2%;
-  top: 14%;
+  top: 15%;
   width: 96%;
-  height: 66%;
+  height: 64%;
+  display: block;
   overflow: visible;
 }
 
+
 .map-islands path {
-  opacity: .91;
-  stroke: rgba(157,226,255,.74);
+  opacity: .95;
+  stroke: rgba(157, 226, 255, .8);
   stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
 }
 
 .map-routes path {
@@ -2254,8 +2261,10 @@ button {
   }
 
   .indonesia-map {
-    top: 14%;
-    height: 65%;
+    left: 2%;
+    top: 16%;
+    width: 96%;
+    height: 60%;
   }
 
   .coverage-form-card {
@@ -2307,6 +2316,11 @@ button {
 @media (max-width: 480px) {
   .container {
     width: calc(100% - 30px);
+  }
+
+  .indonesia-map {
+  top: 17%;
+  height: 57%;
   }
 
   .brand-sub {
