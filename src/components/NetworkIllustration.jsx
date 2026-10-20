@@ -1,5 +1,5 @@
 import Icon from "./Icon";
-
+import logo from "../../LOGO.png";
 function NetworkIllustration() {
   return (
     <div className="network-scene" aria-label="Ilustrasi jaringan BIMATA">
@@ -22,7 +22,9 @@ function NetworkIllustration() {
       </svg>
       <div className="scene-center">
         <div className="center-orbit" />
-        <div className="center-logo"><span>B</span></div>
+        <div className="center-logo">
+          <img src={logo} alt="Logo BIMATA" className="center-logo-image" />
+        </div>
         <b>BIMATA</b>
         <small>NETWORK CORE</small>
         <div className="online-indicator"><i /> Network concept</div>
